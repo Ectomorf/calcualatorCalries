@@ -72,11 +72,11 @@ function selectGender () {
     if (this.classList.contains('men')) {
         this.classList.add('selected-gender');
         genderButtons[1].classList.remove('selected-gender')
-        gender = 'man'
+        gender = 'men'
     }  else {
         this.classList.add('selected-gender');
         genderButtons[0].classList.remove('selected-gender');
-        gender = 'woman';
+        gender = 'women';
     }
 }
 
@@ -114,10 +114,10 @@ function checkInputs (inputs) {
 
 function calculateCalorieRate (gender, physicalDate, activityLvl) {
     let result = 0;
-
+    console.log(gender)
     if (gender == 'men') {
         result = 88.36 + (13.4 * physicalDate.weight) + (4.8 * physicalDate.growth) - (5.7 * physicalDate.age);
-    } else {
+    } else if (gender == 'women'){
         result = 447.6 + (9.2 * physicalDate.weight) + (3.1 * physicalDate.growth) - (4.3 * physicalDate.age);
     }
     
