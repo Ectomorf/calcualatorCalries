@@ -1,0 +1,175 @@
+* {
+    box-sizing: border-box;
+    list-style: none;
+    text-align: center;
+}
+
+ul, li{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #202324;
+    width: 100%;
+}
+
+h1:hover, h2:hover {
+    cursor:default;
+}
+
+.mine-title {
+    color: white;
+    margin-top: 100px;
+}
+
+.calculator, .active {
+    margin: auto;
+    width: 350px;
+    border-radius: 15px;
+    padding: 15px;
+    background-color: white;
+}
+
+.calculator {
+    margin-top: 30px;
+}
+
+.title, .result-title {
+    text-align: left;
+}
+
+.calculator-gender__item {
+    display: flex;
+    flex-direction: column;
+}
+
+.calculator-gender__item:hover {
+    cursor: pointer;
+}
+
+.gender.title {
+    text-align: left;
+    font-weight: bolder;
+}
+
+.gender-items > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    height: 40px;
+    color: black;
+    font-size: small;
+}
+
+.gender-items > div > *{
+    cursor: pointer;
+}
+
+.men {
+    border: 1px solid rgb(201, 113, 12);
+    border-right: none;
+    border-radius: 5px 0px 0px 5px;
+}
+
+.women {
+    border: 1px solid rgb(201, 113, 12);
+    border-left: none;
+    border-radius: 0px 5px 5px 0px;
+}
+
+.calculator-gender__item:hover {
+    color: rgb(201, 113, 12);
+}
+
+.calculator-gender__item.selected-gender {
+    color: white;
+    background-color: rgb(201, 113, 12);
+    transition: background 0.3s ease-in;
+}
+
+.gender-items {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.physical-data__container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.physical-data__container > ul {
+    width: 70px;
+    text-align: left;
+}
+
+.data {
+    width: 100%;
+    height: 30px;
+    border-radius: 4px;
+}
+
+.physical-activity__container > ul {
+    display: inline-block;
+    width: 100%;
+}
+
+.physical-activity__container > ul > li {
+    text-align: left;
+    padding: 2px;
+}
+
+.buttons__container {
+    margin-top: 20px;
+}
+
+button {
+    height: 30px;
+    width: 45%;
+}
+
+.reset, .submit {
+    border: none;
+}
+
+.submit {
+    border-radius: 3px;
+    background-color: rgb(201, 113, 12);
+    color: white;
+}
+
+.submit.disabled-submit, .submit.disabled-submit:hover {
+    background-color: rgb(119, 116, 109);
+    opacity: 1;
+}
+
+.reset {
+    background-color: white;
+    color: red;
+}
+
+.reset.disabled-reset, .reset.disabled-reset:hover {
+    color: rgb(119, 116, 109);
+    opacity: 1;
+}
+
+.reset:hover, .submit:hover {
+    cursor: pointer;
+    opacity: 0.70;
+}
+
+.results__container {
+    display: none;
+}
+
+.result {
+    display: flex;
+    justify-content: space-between;
+}
+
+.active {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}

@@ -1,0 +1,151 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Счётчик калорий</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <h1 class="mine-title">Калькулятор нормы калорий</h1>
+
+
+    <div class="calculator">
+
+
+        <div class="calculator__container">
+
+
+            <form class="calculator-form" action="" method="post">
+
+
+                <div class="calculator-gender__items">
+
+                    <h2 class="gender title">Пол</h2>
+
+                    <div class="gender-items">
+
+                        <div class="calculator-gender__item men selected-gender"><h2>Мужчина</h2></div>
+                        <div class="calculator-gender__item women"><h2>Женщина</h2></div>
+
+                    </div>    
+
+                </div>
+
+
+                <div class="physical-data__container">
+
+                        <ul>
+                            <li><h2>Возраст</h2></li>
+                            <li><input class="data age" type="number" name="age"></li>
+                        </ul>
+
+                        <ul>
+                            <li><h2>Рост</h2></li>
+                            <li><input class="data growth" type="number" name="growth"></li>
+                        </ul>
+
+                        <ul>
+                            <li><h2>Вес</h2></li>
+                            <li><input class="data weight" type="number" name="weight"></li>
+                        </ul>
+
+                </div>
+
+
+                <div class="physical-activity__container">
+                    
+                    <h2 class="physical-activity title">Уровень физичемкой активности</h2>
+
+                    <ul>
+
+                        <li>
+                            <input class="physical-activity" type="radio" name="physicalActivity" id="min" checked>
+                            <label for="min">Минимальный</label>
+                        </li>
+
+                        <li>
+                            <input type="radio" name="physicalActivity" id="low">
+                            <label for="low">Низкий</label>
+                        </li>
+
+                        <li>
+                            <input type="radio" name="physicalActivity" id="med">
+                            <label for="low">Средний</label>
+                        </li>
+
+                        <li>
+                            <input type="radio" name="physicalActivity" id="height">
+                            <label for="hegiht">Высокий</label>
+                        </li>
+
+                        <li>
+                            <input type="radio" name="physicalActivity" id="veryHeight">
+                            <label for="very-height">Очень высокий</label>
+                        </li>
+
+                    </ul> 
+                        
+                </div>
+
+
+                <div class="buttons__container">
+
+                    <button class="submit disabled-submit" type="submit" disabled>Расчитать</button>
+
+                    <button class="reset disabled-reset" type="reset" disabled>Отчистить поля</button>
+
+                </div>
+
+
+            </form>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="results__container">
+
+        <h2 class="result-title">Ваша норма калорий</h2>
+
+        <div class="result">
+
+            <div class="lost-weight__container">
+
+                <ul class="lost-weight__result">
+                    <li class="lost-weight">Для похудения</li>
+                    <li class="lost-weight cal">3000 <span>ккал</span></li>
+                </ul>
+
+            </div>
+
+            <div class="maintaining-weight__container">
+
+                <ul class="maintaining-weightn__result">
+                    <li class="maintaining-weight">Для поддержания</li>
+                    <li class="maintaining-weight cal">3000 <span>ккал</span></li>
+                </ul>
+
+            </div>
+
+            <div class="weight-gain__container">
+
+                <ul class="weight-gain__result">
+                    <li class="weight-gain">Для набора веса</li>
+                    <li class="weight-gain cal">3000 <span>ккал</span></li>
+                </ul>
+
+        </div>
+
+
+    </div>
+
+
+    <script src="scripts.js"></script>
+</body>
+</html>
